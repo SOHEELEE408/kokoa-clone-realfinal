@@ -1,0 +1,54 @@
+.friends__friend-more {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend__content {
+  margin-left: 15px;
+}
+
+.friend__content .friend__name {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.friend__status {
+  font-size: 12px;
+  color: gray;
+}
+
+.more-friend__icon {
+  margin-right: 10px;
+}
+
+.friend__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+
+.more-icon {
+  margin-top: 40px;
+}
+
+.more-icon i {
+  font-size: 30px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.more-icon i:hover {
+  opacity: 1;
+}
+
+.more-icon__column {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}

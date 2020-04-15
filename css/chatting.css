@@ -1,0 +1,138 @@
+.chat-screen {
+  height: 800px;
+  margin-top: 30px;
+  border-top: 1px solid #f7f7f7;
+  background-image: url("../images/chatting-back.jpg");
+}
+
+.chat__timestamp {
+  margin-left: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: rgb(130, 126, 131);
+}
+
+.chat-messages {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.message__bubble {
+  background-color: white;
+  display: block;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+.incoming-message .message__bubble {
+  border-bottom-left-radius: 0px;
+  background-image: linear-gradient(to right, #7b4397, #dc2430);
+}
+
+.incoming-message img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.incoming-message .message__author {
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.sent-message .message__bubble {
+  border-bottom-right-radius: 0px;
+  background-image: linear-gradient(to left, #00c6ff, #0072ff);
+}
+
+.sent-message {
+  align-self: flex-end;
+  margin-top: 60px;
+}
+
+.sent-message .message__content {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.sent-message .haku_sent {
+  margin-left: 60%;
+  width: 80px;
+  height: 70px;
+}
+
+.chat__write-container {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.incoming-message {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 60px;
+}
+
+.chat__write {
+  width: 80%;
+  height: 40px;
+  border: none;
+  background-color: rgb(247, 230, 116);
+}
+
+@keyframes message-blank {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.chat__write:focus {
+  outline: none;
+  background-image: linear-gradient(to right, #03b412, #e9e506);
+  transform: translateY(-100px);
+  height: 60px;
+  border-radius: 30px;
+  font-size: 24px;
+  transition: transform 1s ease-in-out;
+  animation: message-blank 4s linear infinite;
+}
+
+.chat__icon-left {
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.chat__icon-right {
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}

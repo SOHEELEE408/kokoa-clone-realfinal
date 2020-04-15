@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.more--icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__icon {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header__icon:hover {
+  color: rgb(255, 117, 140);
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: 600;
+}

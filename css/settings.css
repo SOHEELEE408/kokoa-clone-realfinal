@@ -1,0 +1,26 @@
+.settings-main {
+  margin: 30px 20px;
+  font-size: 20px;
+}
+
+.main__menu {
+  margin-bottom: 15px;
+}
+
+.main__column {
+  margin-top: 20px;
+}
+
+.menu__icon {
+  margin-right: 5px;
+}
+
+.menu__icon:hover {
+  color: rgb(29, 221, 255);
+  cursor: pointer;
+}
+
+.menu__title:hover {
+  color: rgb(29, 221, 255);
+  cursor: pointer;
+}
